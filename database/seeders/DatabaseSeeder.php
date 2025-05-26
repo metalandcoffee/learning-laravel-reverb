@@ -15,7 +15,7 @@ class DatabaseSeeder extends Seeder
     {
         User::factory(10)->create();
 
-        $channels = collect(['general', 'laravel', 'reverb', 'echo', 'livewire']);
+        $channels = collect(['general', 'laravel', 'reverb', 'echo', 'livewire', 'ebonie']);
 
         $channels->each(function ($channel) {
             Channel::firstOrCreate(['name' => $channel])
